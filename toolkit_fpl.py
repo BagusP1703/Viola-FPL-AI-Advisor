@@ -221,7 +221,7 @@ def get_kesulitan_jadwal(team_id, gameweek_sekarang, jumlah_laga=3):
     
     params = {
         'team_id': team_id,
-        'gw_start': gameweek_sekarang,
+        'gw_start': gameweek_sekarang + 1,
         'gw_end': gameweek_sekarang + jumlah_laga - 1,
         'limit': jumlah_laga
     }
