@@ -70,3 +70,15 @@ def simpan_data_statistik(data_pemain, nama_db='fpl_data.db'):
 if __name__ == '__main__':
     data_statistik = ambil_data_pemain_understat()
     simpan_data_statistik(data_statistik)
+
+# --- Bagian 3: Fungsi Utama untuk Eksekusi ---
+def jalankan_update_statistik_lengkap():
+    """Fungsi utama untuk menjalankan seluruh proses update statistik."""
+    print("Memulai update data statistik dari Understat...")
+    data_statistik = ambil_data_pemain_understat()
+    simpan_data_statistik(data_statistik)
+    print("Update data statistik selesai.")
+
+# Jalankan fungsi utama hanya jika file ini dieksekusi langsung
+if __name__ == '__main__':
+    jalankan_update_statistik_lengkap()

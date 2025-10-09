@@ -1,0 +1,8 @@
+# Database
+fpl_data.db
+
+# Lingkungan virtual Python
+venv/
+
+# Folder cache Python
+__pycache__/
