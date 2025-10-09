@@ -38,7 +38,12 @@ with st.sidebar:
                 st.error(f"Gagal memperbarui data statistik: {e}")
         
         st.info("Refresh selesai! Silakan jalankan analisis untuk melihat data terbaru.")
-
+    
+    # 🧹 Tombol untuk membersihkan cache
+    if st.button("🧹 Bersihkan Cache"):
+        st.cache_data.clear()
+        st.cache_resource.clear()
+        st.success("Cache sudah dibersihkan!")
 # --- Tampilan Utama Aplikasi ---
 st.title("⚽ Viola FPL AI Advisor")
 st.write("""

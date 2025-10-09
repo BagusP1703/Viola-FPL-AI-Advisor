@@ -4,7 +4,7 @@ import sqlite3
 # KONFIGURASI
 # ================================
 DB_PATH = "fpl_data.db"   # Ganti sesuai file database kamu
-GAMEWEEK_SEKARANG = 7
+GAMEWEEK_SEKARANG = 8
 JUMLAH_LAGA = 3
 
 TEAM_IDS = [4, 13, 20]  # contoh: Arsenal=1, Liverpool=13, Man City=20

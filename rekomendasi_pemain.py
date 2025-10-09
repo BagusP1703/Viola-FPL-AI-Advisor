@@ -33,7 +33,7 @@ def hitung_rekomendasi():
         skor_form_tim = hitung_form_tim(pemain['team_id'], gameweek_sekarang, 5)
 
         # Ambil skor kesulitan jadwal untuk tim pemain ini
-        skor_jadwal = get_kesulitan_jadwal(pemain['team_id'], gameweek_sekarang, 3)
+        skor_jadwal = get_kesulitan_jadwal(pemain['team_id'], gameweek_sekarang+1, 3)
         
         # 3. Hitung Master Score menggunakan formula berbobot
         master_score = (BOBOT_FORM_PEMAIN * pemain['player_form']) + \
